@@ -280,7 +280,7 @@ describe("test custom XSS method", function() {
       stripIgnoreTagBody: true
     });
     debug(html);
-    assert.equal(html, "<a>link</a>bk");
+    assert.equal(html, "<a>link</a>k");
   });
 
   it("#stripIgnoreTagBody - *", function() {
@@ -289,7 +289,7 @@ describe("test custom XSS method", function() {
       stripIgnoreTagBody: "*"
     });
     debug(html);
-    assert.equal(html, "<a>link</a>bk");
+    assert.equal(html, "<a>link</a>k");
   });
 
   it("#stripIgnoreTagBody - ['x']", function() {
