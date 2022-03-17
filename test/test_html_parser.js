@@ -60,7 +60,7 @@ describe("test HTML parser", function() {
           assert.equal(position, 27);
           assert.equal(tag, "br");
           assert.equal(html, "<br/>");
-          assert.equal(isClosing, false);
+          assert.equal(isClosing, true);
           return "[BR]";
         } else {
           throw new Error();
